@@ -1,0 +1,58 @@
+.todo{
+    width: 500px;
+    min-height: 65px;
+    background-color: #1b1b32;
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+}
+
+
+/* Colores */
+
+.todo:nth-child(3n + 1) {
+    background-color: #1b1b32;
+  }
+  
+  .todo:nth-child(3n + 2) {
+    background-color: #2a2a40;
+  }
+  
+  .todo:nth-child(3n + 3) {
+    background-color: #3b3b4f;
+  }
+  
+
+.todo-text {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+}
+
+.todo-icon-container{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+.todo-icon{
+    font-size: 25px;
+    transition: .3s;
+}
+.todo-icon:hover{
+    font-size: 30px;
+}
+
+.todo.completed{
+    background-color: #5a01a7;
+    text-decoration: line-through;
+}
